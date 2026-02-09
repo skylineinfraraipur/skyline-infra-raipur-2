@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyline Infra Raipur</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f4c81, #1b6ca8);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0; font-size: 32px; }
+    header p { margin-top: 8px; opacity: 0.9; }
+
+    nav {
+      background: #0b3a63;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #ffd166; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 25px; }
+
+    .btn {
+      background: #ff9800;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #e68900; }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #0f4c81;
+      font-size: 28px;
+    }
+
+    .properties {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-content { padding: 18px; }
+
+    .card-content h4 { margin: 0 0 8px; color: #0f4c81; }
+
+    .contact {
+      background: linear-gradient(135deg, #0f4c81, #1b6ca8);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h3 { font-size: 28px; margin-bottom: 10px; }
+
+    .contact .numbers {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 18px;
+      background: #25d366;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0b3a63;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Skyline Infra Raipur</h1>
+    <p>Best Property Deals in Raipur | Buy • Sell • Invest with Confidence</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Find Your Perfect Land in Raipur</h2>
+    <p>Trusted Real Estate Deals • Prime Locations • Genuine Pricing</p>
+    <a class="btn" href="#contact">Contact Now</a>
+  </section>
+
+  <section id="properties" class="section">
+    <h3>Featured Properties</h3>
+
+    <div class="properties">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" alt="Plot" />
+        <div class="card-content">
+          <h4>Naya Raipur Plot</h4>
+          <p>On Damar Road • Best Investment Location</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="Farmhouse" />
+        <div class="card-content">
+          <h4>Farmhouse Land</h4>
+          <p>Peaceful Area • Perfect Weekend Home</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Industrial" />
+        <div class="card-content">
+          <h4>Industrial Land</h4>
+          <p>Factory Setup Ready • Prime Connectivity</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Skyline Infra Raipur</h3>
+    <p>Call or WhatsApp for Best Property Deals</p>
+
+    <div class="numbers">📞 9202321001 | 9203691001</div>
+
+    <a class="whatsapp-btn" href="https://wa.me/919202321001" target="_blank">
+      Chat on WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Skyline Infra Raipur • All Rights Reserved
+  </footer>
+
+</body>
+</html>
